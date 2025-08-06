@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator | Digital Empowerment Network</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="theme-toggle">
+                <button id="theme-switcher" aria-label="Toggle dark mode">🌙</button>
+            </div>
+            
+            <div class="display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+            
+            <div class="buttons-grid">
+                <button class="span-2" data-action="clear">C</button>
+                <button data-action="delete">⌫</button>
+                <button data-action="operation">÷</button>
+                
+                <button data-action="number">7</button>
+                <button data-action="number">8</button>
+                <button data-action="number">9</button>
+                <button data-action="operation">×</button>
+                
+                <button data-action="number">4</button>
+                <button data-action="number">5</button>
+                <button data-action="number">6</button>
+                <button data-action="operation">-</button>
+                
+                <button data-action="number">1</button>
+                <button data-action="number">2</button>
+                <button data-action="number">3</button>
+                <button data-action="operation">+</button>
+                
+                <button data-action="sign">±</button>
+                <button data-action="number">0</button>
+                <button data-action="decimal">.</button>
+                <button data-action="calculate">=</button>
+            </div>
+            
+            <div class="history-panel">
+                <h3>History</h3>
+                <ul id="history-list"></ul>
+                <button data-action="clear-history">Clear History</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
